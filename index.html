@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bill Splitter</title>
+  <style>
+    body { font-family: sans-serif; max-width: 400px; margin: 40px auto; }
+    input, button { display: block; width: 100%; margin: 8px 0; padding: 8px; }
+    #error { color: red; }
+    #result { font-size: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Bill Splitter</h2>
+  <input id="amount" type="number" placeholder="Total bill amount (₹)">
+  <input id="people" type="number" placeholder="Number of people">
+  <input id="tip" type="number" placeholder="Tip % (optional)">
+  <button onclick="calculate()">Split the bill</button>
+  <p id="error"></p>
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
